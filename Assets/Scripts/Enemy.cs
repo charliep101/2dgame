@@ -6,30 +6,30 @@ public class Enemy : MonoBehaviour
 {
     public Animator animator;
 
-    public int maxHealth = 100;
-    int currentHealth;
+    public int emaxHealth = 100;
+    int ecurrentHealth;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        ecurrentHealth = emaxHealth;
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        ecurrentHealth -= damage;
 
         animator.SetTrigger("Hurt");
 
-        if (currentHealth <= 0)
+        if (ecurrentHealth <= 0)
         {
-            Die();
+            eDie();
         }
     }
 
-    void Die()
+    void eDie()
     {
         Debug.Log("Enemy died");
 

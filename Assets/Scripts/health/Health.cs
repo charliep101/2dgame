@@ -14,12 +14,8 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-            TakeDamage(1);
-    }
+     
 
+    }
 }
