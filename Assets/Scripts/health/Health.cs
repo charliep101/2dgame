@@ -21,13 +21,17 @@ public class Health : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Checkpoint")
+        {
+            respawnPoint = transform.position;
+        }
+
+
+
         if (currentHealth < 0.01)
         {
             transform.position = respawnPoint;
         }
-        else if (collision.tag == "Checkpoint")
-        {
-            respawnPoint = transform.position;
-        }
+
     }
 }
