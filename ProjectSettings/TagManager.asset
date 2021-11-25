@@ -16,7 +16,7 @@ TagManager:
   - UI
   - Ground
   - Terrain
-  - B
+  - Walls
   - 
   - 
   - 
@@ -41,9 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3917193773
+  - name: background
+    uniqueID: 4089950049
+    locked: 0
+  - name: traps
+    uniqueID: 4019831859
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1553160415
+    locked: 0
+  - name: Player
+    uniqueID: 3917193773
     locked: 0
